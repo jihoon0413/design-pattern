@@ -1,4 +1,4 @@
-package org.example.design_pattern.iterator;
+package org.example.design_pattern.iterator_1;
 
 //public interface Iterator<E> {
 //    public abstract boolean hasNext();

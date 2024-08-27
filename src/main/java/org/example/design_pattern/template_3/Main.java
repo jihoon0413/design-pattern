@@ -1,4 +1,4 @@
-package org.example.design_pattern.template;
+package org.example.design_pattern.template_3;
 
 public class Main {
     public static void main(String[] args) {

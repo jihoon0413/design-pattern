@@ -1,4 +1,4 @@
-package org.example.design_pattern.adapter;
+package org.example.design_pattern.adapter_2;
 
 public class Main {
     public static void main(String[] args) {

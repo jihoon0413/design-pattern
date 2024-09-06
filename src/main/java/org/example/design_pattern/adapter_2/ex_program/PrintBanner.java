@@ -1,4 +1,4 @@
-package org.example.design_pattern.adapter_2;
+package org.example.design_pattern.adapter_2.ex_program;
 
 public class PrintBanner extends Banner implements Print{ // Adapter 역할을 함 사용방법이 다른 Print 와 Banner 사이에서 중간 역할을 함
     public PrintBanner(String string) {

@@ -3,6 +3,7 @@ package org.example.design_pattern.factory_4;
 import org.example.design_pattern.factory_4.framework.Factory;
 import org.example.design_pattern.factory_4.framework.Product;
 import org.example.design_pattern.factory_4.idcard.IDCardFactory;
+import org.example.design_pattern.factory_4.television.TelevisionFactory;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,5 +17,10 @@ public class Main {
         card2.use();
         card3.use();
 
+        System.out.println();
+        factory = new TelevisionFactory();
+
+        Product tv = factory.create("SHIN");
+        tv.use();
     }
 }

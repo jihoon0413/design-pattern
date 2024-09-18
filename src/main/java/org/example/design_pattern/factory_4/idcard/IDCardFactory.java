@@ -5,9 +5,11 @@ import org.example.design_pattern.factory_4.framework.Product;
 
 public class IDCardFactory extends Factory {
 
+    private int serial = 100;
+
     @Override
     public Product createProduct(String owner) {
-        return new IDCard(owner);
+        return new IDCard(owner,serial++);
     }
 
     @Override

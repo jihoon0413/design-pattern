@@ -5,10 +5,12 @@ import org.example.design_pattern.factory_4.framework.Product;
 public class IDCard extends Product {
 
     private String owner;
+    private int serial;
 
-    public IDCard(String owner) {
-        System.out.println(owner + "의 카드를 만듭니다.");
+    public IDCard(String owner, int serial) {
+        System.out.println(owner + "의 카드(serial)를 만듭니다.");
         this.owner = owner;
+        this.serial = serial;
     }
 
     @Override
@@ -18,7 +20,7 @@ public class IDCard extends Product {
 
     @Override
     public String toString() {
-        return "[IDCard:" + owner + "]";
+        return "[IDCard:" + owner + "(" + serial + ")]";
     }
 
     public String getOwner() {

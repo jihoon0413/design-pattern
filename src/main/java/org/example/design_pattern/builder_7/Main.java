@@ -2,7 +2,7 @@ package org.example.design_pattern.builder_7;
 
 public class Main {
     public static void main(String[] args) {
-        if(args.length != 2) {
+        if(args.length != 1) {
             usage();
             System.exit(0);
         }

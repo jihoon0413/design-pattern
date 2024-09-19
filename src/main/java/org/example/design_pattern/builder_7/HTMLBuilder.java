@@ -35,7 +35,7 @@ public class HTMLBuilder extends Builder{
             sb.append(s);
             sb.append("</li>\n");
         }
-        sb.append("</li>\n");
+        sb.append("</ul>\n\n");
     }
 
     @Override

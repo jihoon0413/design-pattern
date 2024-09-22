@@ -1,4 +1,4 @@
-package org.example.design_pattern.singleton_5;
+package org.example.design_pattern.singleton_5.ex_program;
 
 public class Main {
     public static void main(String[] args) {

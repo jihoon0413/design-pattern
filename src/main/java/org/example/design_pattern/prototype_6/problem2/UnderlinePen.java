@@ -1,12 +1,16 @@
-package org.example.design_pattern.prototype_6;
+package org.example.design_pattern.prototype_6.problem2;
 
-import org.example.design_pattern.prototype_6.framework.Product;
+import org.example.design_pattern.prototype_6.problem2.framework.Product;
 
 public class UnderlinePen implements Product {
     private char ulchar;
 
     public UnderlinePen(char ulchar) {
         this.ulchar = ulchar;
+    }
+
+    public UnderlinePen(UnderlinePen prototype) {
+        this.ulchar = prototype.ulchar;
     }
 
     @Override
@@ -21,12 +25,6 @@ public class UnderlinePen implements Product {
 
     @Override
     public Product createCopy() {
-        Product p = null;
-        try{
-            p = (Product) clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return p;
+        return new UnderlinePen(this);
     }
 }

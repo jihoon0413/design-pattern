@@ -1,7 +1,7 @@
-package org.example.design_pattern.prototype_6;
+package org.example.design_pattern.prototype_6.ex_program;
 
-import org.example.design_pattern.prototype_6.framework.Manager;
-import org.example.design_pattern.prototype_6.framework.Product;
+import org.example.design_pattern.prototype_6.ex_program.framework.Manager;
+import org.example.design_pattern.prototype_6.ex_program.framework.Product;
 
 public class Main {
     public static void main(String[] args) {

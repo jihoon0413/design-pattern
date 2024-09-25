@@ -1,4 +1,4 @@
-package org.example.design_pattern.prototype_6.framework;
+package org.example.design_pattern.prototype_6.ex_program.framework;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +14,4 @@ public class Manager {
         Product p = showcase.get(prototypeName);
         return p.createCopy();
     }
-
-
 }

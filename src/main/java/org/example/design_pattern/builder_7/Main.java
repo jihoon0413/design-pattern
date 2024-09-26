@@ -1,5 +1,7 @@
 package org.example.design_pattern.builder_7;
 
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
         if(args.length != 1) {
@@ -18,7 +20,14 @@ public class Main {
             director.construct();
             String filename = htmlBuilder.getHTMLResult();
             System.out.println("HTML파일 " + filename + "이 작성되었습니다.");
-        }else {
+        }else if(args[0].equals("frame")) {
+            FrameBuilder frameBuilder = new FrameBuilder();
+            Director director = new Director(frameBuilder);
+            director.construct2();
+            JFrame frame = frameBuilder.getFrameResult();
+            frame.setVisible(true);
+        }
+        else {
             usage();
             System.exit(0);
         }

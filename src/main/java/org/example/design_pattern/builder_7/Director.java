@@ -17,4 +17,13 @@ public class Director {
         builder.close();
     }
 
+    public void construct2() {
+        builder.makeTitle("백엔드 개발자 되기");
+        builder.makeString("기초 다지기");
+        builder.makeItems(new String[] {"알고리즘 공부", "네트워크 공부", "디자인패턴 공부"});
+        builder.makeString("자격증 따기");
+        builder.makeItems(new String[] {"SQLD", "정보처리기사"});
+        builder.close();
+    }
+
 }

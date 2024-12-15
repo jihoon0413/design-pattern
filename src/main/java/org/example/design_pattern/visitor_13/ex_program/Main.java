@@ -1,4 +1,4 @@
-package org.example.design_pattern.visitor_13;
+package org.example.design_pattern.visitor_13.ex_program;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,5 +29,11 @@ public class Main {
         shin.add(new File("junk.mail", 500));
         rootDir.accept(new ListVisitor());
 
+        FileFindVisitor ffv = new FileFindVisitor(".html");
+        rootDir.accept(ffv);
+        System.out.println("HTML files are: ");
+        for(File file : ffv.getFoundFiles()) {
+            System.out.println(file.getName());
+        }
     }
 }

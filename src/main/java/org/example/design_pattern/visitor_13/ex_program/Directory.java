@@ -1,4 +1,4 @@
-package org.example.design_pattern.visitor_13;
+package org.example.design_pattern.visitor_13.ex_program;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -19,11 +19,9 @@ public class Directory extends Entry implements Iterable<Entry>{
 
     @Override
     public int getSize() {
-        int size = 0;
-        for (Entry entry : directory) {
-            size += entry.getSize();
-        }
-        return size;
+        SizeVisitor sizeVisitor = new SizeVisitor();
+        accept(sizeVisitor);
+        return sizeVisitor.getSize();
     }
 
     public Entry add(Entry entry) {

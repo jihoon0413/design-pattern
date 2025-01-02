@@ -12,7 +12,8 @@ public class Main {
         alice.setNext(bob).setNext(charlie).setNext(diana).setNext(elmo).setNext(fred);
 
         for (int i = 0; i < 500; i+=33) {
-            alice.support(new Trouble(i));
+//            alice.support(new Trouble(i));
+            alice.support2(new Trouble(i));
         }
 
     }

@@ -25,6 +25,21 @@ public abstract class Support {
         }
     }
 
+    public void support2(Trouble trouble) {
+        Support obj = this;
+        while (true) {
+            if(obj.resolve(trouble)) {
+                obj.done(trouble);
+                break;
+            } else if(obj.next == null) {
+                obj.fail(trouble);
+                break;
+            } else {
+                obj = obj.next;
+            }
+        }
+    }
+
 
     @Override
     public String toString() {

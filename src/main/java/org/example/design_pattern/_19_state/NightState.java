@@ -26,6 +26,7 @@ public class NightState implements State{
     @Override
     public void doAlarm(Context context) {
         context.callSecurity("비상벨(야간!)");
+        context.changeState(UrgentState.getInstance());
     }
 
     @Override

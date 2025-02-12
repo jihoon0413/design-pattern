@@ -26,6 +26,7 @@ public class DayState implements State{
     @Override
     public void doAlarm(Context context) {
         context.callSecurity("비상벨(주간)");
+        context.changeState(UrgentState.getInstance());
     }
 
     @Override
